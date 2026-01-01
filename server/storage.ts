@@ -1,9 +1,8 @@
 import { type User, type InsertUser, type Match, type ChatMessage } from "@shared/schema";
 import { randomUUID } from "crypto";
 
-// modify the interface with any CRUD methods
-// you might need
-
+// Storage interface for user, match, and chat methods
+export interface IStorage {
   getUser(id: string): Promise<User | undefined>;
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
