@@ -1,7 +1,6 @@
-import { VercelRequest, VercelResponse } from '@vercel/node';
 import { storage } from '../server/storage';
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req, res) {
   if (req.method === 'GET') {
     const { matchId } = req.query;
     if (!matchId || typeof matchId !== 'string') {
