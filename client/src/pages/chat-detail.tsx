@@ -65,18 +65,22 @@ export default function ChatDetailPage() {
       <main className="flex-1 p-4 space-y-4 overflow-y-auto pb-24">
         <div className="text-center text-xs text-muted-foreground my-4 uppercase tracking-widest opacity-50">Today</div>
         
-        {messages.map(msg => (
-          <div key={msg.id} className={cn("flex w-full", msg.isMe ? "justify-end" : "justify-start")}>
-            <div className={cn(
-              "max-w-[75%] px-4 py-3 text-sm shadow-sm",
-              msg.isMe 
-                ? "bg-primary text-primary-foreground rounded-2xl rounded-tr-sm" 
-                : "bg-white text-foreground border border-border/50 rounded-2xl rounded-tl-sm"
-            )}>
-              {msg.text}
+        {loading ? (
+          <div className="text-center text-muted-foreground">Loading...</div>
+        ) : (
+          messages.map(msg => (
+            <div key={msg.id} className={cn("flex w-full", msg.isMe ? "justify-end" : "justify-start")}> 
+              <div className={cn(
+                "max-w-[75%] px-4 py-3 text-sm shadow-sm",
+                msg.isMe 
+                  ? "bg-primary text-primary-foreground rounded-2xl rounded-tr-sm" 
+                  : "bg-white text-foreground border border-border/50 rounded-2xl rounded-tl-sm"
+              )}>
+                {msg.text}
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </main>
 
       {/* Input */}
