@@ -1,6 +1,6 @@
 import { storage } from '../server/storage';
 
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any) {
   if (req.method === 'GET') {
     const { matchId } = req.query;
     if (!matchId || typeof matchId !== 'string') {
