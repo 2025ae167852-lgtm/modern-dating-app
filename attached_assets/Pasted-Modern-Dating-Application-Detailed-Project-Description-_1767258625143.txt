@@ -1,0 +1,199 @@
+Modern Dating Application — Detailed Project Description
+1. Overview
+
+This project is a modern dating application inspired by platforms such as Kismia, designed around swipe-based matching, rich user profiles, and premium monetization features.
+
+The application will be developed as a Minimum Viable Product (MVP) with a strong technical foundation, clean architecture, and modern UI/UX. The MVP will be fully functional and intentionally structured so it can be easily expanded into a full-scale production app.
+
+The project emphasizes simplicity, scalability, and full ownership, ensuring that I can independently manage, modify, and grow the application without vendor lock-in.
+
+2. Core Features (MVP)
+🔹 Swipe-Based Matching
+
+Users browse profiles one at a time using a card-based swipe interface
+
+Actions:
+
+❤️ Like
+
+❌ Pass
+
+Smooth transitions and animations for a modern feel
+
+Matching logic prepared for future mutual-like matches
+
+🔹 User Profiles
+
+Each user profile includes:
+
+Profile photo(s)
+
+Name and age
+
+Short bio
+
+Optional interests / tags (expandable later)
+
+Profiles are displayed in a clean, mobile-first layout optimized for engagement.
+
+3. User Flow (MVP)
+
+User logs in or registers
+
+User views swipeable profiles
+
+User likes or passes profiles
+
+Liked profiles are stored
+
+Matching logic can later enable chat when likes are mutual
+
+The MVP focuses on core interaction first, avoiding unnecessary complexity.
+
+4. Admin & Ownership Requirements (Critical)
+✅ 100% Code Ownership
+
+I will receive full ownership of the entire codebase
+
+No licensed, locked, or proprietary components
+
+No third-party dependency that restricts ownership
+
+Code will be delivered in a standard Git repository
+
+✅ Full Admin Control
+
+I must be able to:
+
+Add, edit, and remove user profiles
+
+Control matching rules
+
+Manage monetization features
+
+Adjust app branding (name, colors, UI)
+
+Access and manage the database
+
+Deploy and update the app independently
+
+5. Admin Training & Documentation (Required)
+
+The project must include clear guidance and training so I can manage the app myself without ongoing developer dependency.
+
+This includes:
+
+Step-by-step instructions on:
+
+Running the app locally
+
+Managing users and profiles
+
+Updating UI components
+
+Editing business logic
+
+Deploying updates
+
+Clear explanation of:
+
+Project folder structure
+
+Backend services
+
+Database schema
+
+Environment variables
+
+Written documentation and/or video walkthroughs
+
+Goal: I should be able to administer and modify 100% of the application confidently.
+
+6. Monetization (Prepared, Not Overbuilt)
+
+The MVP architecture will support future premium monetization, including:
+
+Paid messages
+
+Credits-based messaging (Kismia-style)
+
+Profile boosts
+
+Advanced filters
+
+Subscription plans
+
+Monetization logic will be clearly separated, allowing features to be enabled or disabled without rewriting the app.
+
+7. Technical Architecture
+Frontend
+
+React (or React Native later)
+
+Tailwind CSS / modern UI system
+
+Framer Motion for animations
+
+Clean, component-based structure
+
+Backend (Scalable & Replaceable)
+
+Supabase or Firebase (recommended for MVP)
+
+PostgreSQL or NoSQL database
+
+Authentication (email / phone)
+
+Realtime support for chat (future)
+
+Architecture Principles
+
+Clean separation of concerns
+
+Modular code
+
+Easy-to-replace services
+
+No hard-coded logic
+
+8. Expandability (Post-MVP Roadmap)
+
+Mutual matching logic
+
+In-app chat
+
+Notifications
+
+Location-based matching
+
+AI-powered recommendations
+
+Mobile apps (iOS / Android via React Native / Expo)
+
+Advanced admin dashboard
+
+9. Security & Data Control
+
+Secure authentication
+
+Role-based access (admin vs users)
+
+Environment variables for secrets
+
+Database rules documented and transparent
+
+10. Final Deliverables
+
+Complete MVP source code
+
+Admin access to backend services
+
+Full documentation for self-management
+
+Deployment instructions
+
+Ownership confirmation (no code restrictions)
+
+✅ Final Statement
+
+This project is designed so that I fully own the product, understand how it works end-to-end, and can administer, customize, and scale it independently without relying on third parties or the original developer.
